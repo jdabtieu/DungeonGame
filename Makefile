@@ -6,7 +6,6 @@ dev:
 	javac -sourcepath src -d bin src/*.java
  
 clean:
-	@rm -rf bin/*
 	@rm DungeonGame.jar
 
 update:
