@@ -179,11 +179,12 @@ public class Main {
     }
     
     /**
-     * Debugging function to jump to a specific stage and level
+     * Debugging function to jump to a specific stage and level.
+     * This function should never be called in production code.
      * @param stage the stage to jump to
      * @param level the level to jump to
      */
-    public static void jump(int stage, int level) {
+    private static void jump(int stage, int level) {
         Main.stage = stage;
         Main.level = level;
     }

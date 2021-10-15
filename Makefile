@@ -4,12 +4,12 @@ prod:
 dev:
 	@mkdir -p bin
 	javac -sourcepath src -d bin src/*.java
- 
+
 clean:
 	@rm DungeonGame.jar
 
 update:
-	@git pull
+	git pull
 
 rprod:
 	java -jar DungeonGame.jar

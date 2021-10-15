@@ -7,6 +7,13 @@ if [[ $(grep "public static final boolean DEBUG = false" src/Main.java | wc -c) 
 	exit -1
 fi
 
+# Enforcing no jumps
+if [[ $(grep 'jump\s*(' src/Main.java | wc -l) -gt 1 ]]; then
+	echo "FATAL: jump function call detected in Main.java. Delete it before rebuilding."
+	echo "FATAL: STOPPING..."
+	exit -1
+fi
+
 echo "Starting up..."
 rm -rf build
 mkdir build
