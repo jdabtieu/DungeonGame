@@ -118,7 +118,7 @@ public class Stage3 {
      * <p>This level links to 3.4.
      */
     public static void level3() {
-        char[][] level = {
+        final char[][] level = {
             "|================================ 4 ======|".toCharArray(),
             "|#       ##############      ##### #######|".toCharArray(),
             "|# ##### ############## #### #####   #####|".toCharArray(),
@@ -147,7 +147,7 @@ public class Stage3 {
         System.out.println("Enter a sequence of moves to get to the end");
         Util.safeSleep(1000);
         System.out.println("Type U, L, D, R for up, left, down, or right");
-        Util.safeSleep(2000);
+        Util.safeSleep(1000);
         System.out.println("If you step on the spikes, you will lose health");
         Util.safeSleep(1000);
         
@@ -168,6 +168,20 @@ public class Stage3 {
             } else {
                 c = Math.max(1, c - 1);
             }
+            
+            // print current position
+            Util.cls();
+            for (int j = 0; j < level.length; j++) {
+                for (int k = 0; k < level[0].length; k++) {
+                    if (j == r && k == c) {
+                        System.out.print('X');
+                    } else {
+                        System.out.print(level[j][k]);
+                    }
+                }
+                System.out.println();
+            }
+            
             // check if player stepped on a spike
             if (level[r][c] == '#') {
                 System.out.println("Ouch! You stepped on a spike!");
@@ -180,16 +194,12 @@ public class Stage3 {
                     return;
                 }
             }
+            Util.safeSleep(200);
         }
         // send player back to beginning if they didn't get to the end
         if (r != endR || c != endC) {
             System.out.println("Uh oh, you didn't make it to the end and got lost.");
             Util.safeSleep(1000);
-            // print where the player ended up
-            level[r][c] = 'X';
-            for (char[] e : level) {
-                System.out.println(e);
-            }
             System.out.println("A mysterious force has brought you back to the beginning.");
             Util.safeSleep(1000);
             System.out.println("Press Enter to continue");

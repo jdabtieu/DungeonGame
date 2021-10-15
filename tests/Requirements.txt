@@ -6,7 +6,7 @@ The test passes if no warnings and exceptions are given by the compiler or durin
 normally with an exit code of 0.
 
 Basic test (DEBUG mode on):
-default package					>=90%
+default package					>=93%
 	Util.java					>=65%
 	Main.java					>=94%
 	Stage3.java					>=98%
