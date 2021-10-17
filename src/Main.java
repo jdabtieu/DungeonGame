@@ -5,8 +5,9 @@ import com.jdabtieu.input.Input;
  * DungeonEscape is a text-based adventure game that follows the main character with amnesia as
  * they traverse a vast dungeon with three floors (stages). Solve puzzles, defeat enemies
  * and bosses, gather coins and custom weapons, and find the way out!
+ * 
  * @author Jonathan Wu (jonathan.wu3@outlook.com)
- * @version v0.3.0 (2021-10-09)
+ * @version v1.0.1 (2021-10-16)
  */
 public class Main {
     /**

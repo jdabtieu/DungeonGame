@@ -131,7 +131,8 @@ public class Stage3 {
             "|=== X ===================================|".toCharArray()
         };
         // starting and ending coordinates
-        final int startR = 9, startC = 5, endR = 1, endC = 34;
+        int r = 9, c = 5;
+        final int endR = 1, endC = 34;
         for (char[] e : level) {
             System.out.println(e);
         }
@@ -157,7 +158,6 @@ public class Stage3 {
                                         "That's an invalid path").toUpperCase();
         
         // simulate user moves
-        int r = startR, c = startC;
         for (int i = 0; i < moves.length(); i++) {
             if (moves.charAt(i) == 'U') {
                 r = Math.max(1, r - 1);

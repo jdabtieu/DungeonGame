@@ -149,7 +149,7 @@ public class Util {
     }
     
     /**
-     * Starts the audio track
+     * Attempts to start an audio track. A warning is printed if audio cannot be started.
      * @param relPath   a relative path to the file to be played
      * @param repeat    whether the music should loop forever
      */

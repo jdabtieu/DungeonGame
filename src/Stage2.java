@@ -92,7 +92,7 @@ public class Stage2 {
         System.out.println("Question 1: Which of these is illegal?\n"
                 + "a) public static final double y;\n"
                 + "b) private static final ArrayList<Object> y;\n"
-                + "c) public integer y;");
+                + "c) public package int y;");
         if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("c")) {
             score++;
             System.out.println("Correct!");
@@ -103,7 +103,7 @@ public class Stage2 {
         // q2: a
         System.out.println("Question 2: Which of the following would give an "
                          + "experienced programmer an aneurism?\n"
-                + "a) if (someBool == true)\n"
+                + "a) if (!someBool == true)\n"
                 + "b) if (!someBool)\n"
                 + "c) if (someBool)\n"
                 + "d) if (someBool && someNumber > 3)");
