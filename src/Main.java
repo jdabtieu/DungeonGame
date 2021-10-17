@@ -184,6 +184,7 @@ public class Main {
      * @param stage the stage to jump to
      * @param level the level to jump to
      */
+    @SuppressWarnings("unused")
     private static void jump(int stage, int level) {
         Main.stage = stage;
         Main.level = level;

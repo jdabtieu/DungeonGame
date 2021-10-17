@@ -1,0 +1,2 @@
+onBoot = "make update"
+run = "make prod && ./run.sh"

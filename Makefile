@@ -1,9 +1,9 @@
-prod:
-	@./build.sh
-
 dev:
 	@mkdir -p bin
 	javac -sourcepath src -d bin src/*.java
+
+prod:
+	@./build.sh
 
 clean:
 	@rm DungeonGame.jar
@@ -11,9 +11,9 @@ clean:
 update:
 	git pull
 
-rprod:
+run-prod:
 	java -jar DungeonGame.jar
 
-rdev:
+run:
 	java -cp bin Main
 

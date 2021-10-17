@@ -1,7 +1,7 @@
 TODO: Final code runthrough
 TODO: 2 more beta testers + akshaya + cullen
 TODO: Final coverage report
-TODO: README
+????: README
 		The game has already been built; you can run it on Windows through runWindows.bat, or on
 		Unix-based systems with runLinux.sh. To manually build, run ./build.sh in a bash
 		environment (not cmd). This will result in a DungeonGame.jar file, which can be launched
