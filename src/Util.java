@@ -173,6 +173,7 @@ public class Util {
             clip.open(ais);
             clip.start();
         } catch (IOException | LineUnavailableException | UnsupportedAudioFileException e) {
+            clip = null;
             System.err.println("[WARNING] Audio failed to start.");
         }
     }

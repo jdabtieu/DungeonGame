@@ -7,7 +7,7 @@ import com.jdabtieu.input.Input;
  * and bosses, gather coins and custom weapons, and find the way out!
  * 
  * @author Jonathan Wu (jonathan.wu3@outlook.com)
- * @version v1.0.1 (2021-10-16)
+ * @version v1.0.2 (2021-10-17)
  */
 public class Main {
     /**
