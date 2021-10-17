@@ -63,6 +63,7 @@ public class Player {
      * Adds the specified weapon to the player's inventory, if it is not full.
      * Otherwise, ask the player which weapon they would like to discard.
      * @param wp    the weapon to add
+     * @throws NullPointerException     if wp is null
      */
     public void addWeapon(final Weapon wp) {
         System.out.println(wp);

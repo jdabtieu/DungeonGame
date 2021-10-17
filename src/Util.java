@@ -30,9 +30,10 @@ public class Util {
     
     
     /**
-     * Sleeps for at least millis milliseconds when not in DEBUG mode. This
-     * function does not require you to catch an InterruptedException
-     * @param mills number of milliseconds to sleep for
+     * Sleeps for at least mills milliseconds when not in DEBUG mode. If interrupted, the
+     * function will immediately return instead of throwing an InterruptedException.
+     * @param mills the length of time to sleep in milliseconds
+     * @throws IllegalArgumentException if the value of mills is negative
      */
     public static void safeSleep(int mills) {
         if (Main.DEBUG) { // do not sleep in DEBUG mode
@@ -78,8 +79,11 @@ public class Util {
     /**
      * Allows the user to switch to one of the rooms specified by rooms
      * @param rooms a List of valid rooms for the user to switch to
+     * @throws NullPointerException if rooms is null
+     * @throws IllegalArgumentException if rooms is empty
      */
     public static void switchRoom(final List<Integer> rooms) {
+        if (rooms.size() < 1) throw new IllegalArgumentException("rooms cannot be empty!");
         System.out.println("Which room would you like to enter?");
         Main.level = Main.in.readInt(e -> rooms.contains(e));
     }

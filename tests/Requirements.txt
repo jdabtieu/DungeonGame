@@ -1,26 +1,26 @@
 To test, use Eclipse's Run with Coverage and use the TestInput.txt file as input. For a quick test,
 the basic test will complete in less than 5 seconds but will not test audio or time delays. For a
-more thorough test, use the full test.
+more thorough test, use the full test, which will take around 10 minutes to run.
  
 The test passes if no warnings and exceptions are given by the compiler or during runtime, and exits
 normally with an exit code of 0.
 
 Basic test (DEBUG mode on):
-default package					>=93%
-	Util.java					>=65%
+default package					>=94%
+	Util.java					>=60%
 	Main.java					>=94%
 	Stage3.java					>=98%
 	Stage2.java					>=98%
 	Stage1.java					>=98%
-	Player.java					>=98%
-	Weapon.java					>=98%
+	Player.java					>=99%
+	Weapon.java					>=99%
 
 Full test (DEBUG mode off):
 default package					>=97%
-	Util.java					>=95%
+	Util.java					>=94%
 	Main.java					>=94%
 	Stage3.java					>=98%
 	Stage2.java					>=98%
 	Stage1.java					>=98%
-	Player.java					>=98%
-	Weapon.java					>=98%
+	Player.java					>=99%
+	Weapon.java					>=99%

@@ -37,13 +37,18 @@ public class Weapon {
     }
     
     /**
-     * Performs an attack
+     * Performs an attack. If the weapon has more than 0 durability, it will deal between
+     * 100-120% of the weapon's base damage for a normal hit. There is a 30% chance of a critical
+     * hit, which would deal between 220-240% of the weapon's base damage. If the weapon has no
+     * durability remaining, there is a 20% chance of dealing 1 (fist) damage.
      * @return  how much damage should be dealt
      */
     public int attack() {
+        // no durability! fist attack
         if (durability == 0) {
             return (int) (Math.random() + 0.2);
         }
+        
         durability--;
         if (Math.random() > 0.7) {
             System.out.println("Critical hit!");
