@@ -259,7 +259,7 @@ public class Stage2 {
                     + "|==========================    3    ======|");
             Main.p.weapons();
             System.out.println("For 3300 coins, Vending machine offers:");
-            Weapon wp = new Weapon("One Hit Blade", 5000, 1);
+            Weapon wp = new Weapon("One Hit Blade", 2000, 1);
             System.out.println(wp);
             if (Util.prompt("Would you like to purchase it?")) {
                 if (Main.p.coins < 3300) {
