@@ -1,6 +1,7 @@
 import java.lang.reflect.InvocationTargetException;
 
 import com.jdabtieu.input.Input;
+
 /**
  * DungeonEscape is a text-based adventure game that follows the main character with amnesia as
  * they traverse a vast dungeon with three floors (stages). Solve puzzles, defeat enemies
@@ -180,8 +181,9 @@ public class Main {
     }
     
     /**
-     * Debugging function to jump to a specific stage and level.
-     * This function should never be called in production code.
+     * Debugging function to jump to a specific stage and level. This function
+     * should never be called in production code.
+     * 
      * @param stage the stage to jump to
      * @param level the level to jump to
      */

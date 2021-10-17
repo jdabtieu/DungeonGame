@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ * Code describing all levels in stage 1
+ */
 public class Stage1 {
     /**
      * Whether one-time events have occured

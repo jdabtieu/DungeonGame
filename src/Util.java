@@ -13,7 +13,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
- * A collection of utility functions for the Dungeon game.
+ * A collection of utility functions for the DungeonEscape game.
  */
 public class Util {
     /**
