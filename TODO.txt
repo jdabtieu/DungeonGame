@@ -1,5 +1,3 @@
-TODO: 2 more beta testers + akshaya + cullen
-TODO: Final coverage report
 ????: README
 		The game has already been built; you can run it on Windows through runWindows.bat, or on
 		Unix-based systems with runLinux.sh. To manually build, run ./build.sh in a bash
@@ -32,7 +30,7 @@ TODO: Final coverage report
 			adding: Util.class(in = 6504) (out= 2966)(deflated 54%)
 			adding: Weapon.class(in = 1135) (out= 686)(deflated 39%)
 			Cleaning up...
-*DON: Variables fix		Player.java:84	Util.java:160,161	Stage2.java:262	Stage3.java:157
+DONE: Variables fix
 DONE: Final code runthrough
 DONE: Check requirements
 	DONE: User-friendly (instructions and controls are clear, spread out text to make it easy to read, etc.)

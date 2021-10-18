@@ -42,6 +42,7 @@ public class Main {
     public static void main(String[] args) {
         while (true) {
             reset();
+            
             // Main menu
             Util.banner();
             System.out.println("\n\t\t1 - Start Game\n\t\t2 - Quit");

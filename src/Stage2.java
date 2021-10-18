@@ -262,14 +262,13 @@ public class Stage2 {
                     + "|==========================    3    ======|");
             Main.p.weapons();
             System.out.println("For 3300 coins, Vending machine offers:");
-            Weapon wp = new Weapon("One Hit Blade", 2000, 1);
-            System.out.println(wp);
+            System.out.println(new Weapon("One Hit Blade", 2000, 1));
             if (Util.prompt("Would you like to purchase it?")) {
                 if (Main.p.coins < 3300) {
                     System.out.println("Not enough coins!");
                 } else {
                     Main.p.coins -= 3300;
-                    Main.p.addWeapon(wp);
+                    Main.p.addWeapon(new Weapon("One Hit Blade", 2000, 1));
                     level4Vending = true;
                 }
             }

@@ -136,6 +136,7 @@ public class Stage3 {
         // starting and ending coordinates
         int r = 9, c = 5;
         final int endR = 1, endC = 34;
+        String moves;
         for (char[] e : level) {
             System.out.println(e);
         }
@@ -157,8 +158,8 @@ public class Stage3 {
         
         // prompt for moves
         System.out.print(">>> ");
-        String moves = Main.in.readLine(e -> e.matches("[uldrULDR]+"),
-                                        "That's an invalid path").toUpperCase();
+        moves = Main.in.readLine(e -> e.matches("[uldrULDR]+"),
+                                 "That's an invalid path").toUpperCase();
         
         // simulate user moves
         for (int i = 0; i < moves.length(); i++) {
@@ -303,7 +304,7 @@ public class Stage3 {
     private static void level5Trivia(String ques, String ans) {
         System.out.println(ques);
         System.out.print(">>> ");
-        if (Main.in.readLine().trim().replace(" ", "").equalsIgnoreCase(ans.replace(" ", ""))) {
+        if (Main.in.readLine().equalsIgnoreCase(ans)) {
             System.out.println("That is correct!!!!!!");
             Util.safeSleep(1000);
             System.out.println("You won: 1200 coins");

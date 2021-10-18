@@ -68,20 +68,21 @@ public class Player {
     public void addWeapon(final Weapon wp) {
         System.out.println(wp);
         for (int i = 0; i < weapons.length; i++) {
-            // null means empty slot, we can just add it in
+            // null means empty slot, we can just add it in and return
             if (weapons[i] == null) {
                 System.out.println("New weapon acquired!");
                 weapons[i] = wp;
                 return;
             }
         }
-        // this would be reached if none of the slots are null
+        // discard a weapon if none of the slots are null
         // i.e. there are no empty slots
+        int choice;
         System.out.println("Your inventory is full! Choose one weapon to discard");
         weapons();
         System.out.println("Select 1, 2, or 3 for slots 1, 2, or 3, "
                          + "and 0 to discard the current weapon");
-        int choice = Main.in.readInt(e -> e >= 0 && e <= 3);
+        choice = Main.in.readInt(e -> e >= 0 && e <= 3);
         System.out.println("Weapon discarded!");
         // if choice is 0, inventory is unmodified
         // otherwise convert from 1-indexed to 0-indexed
