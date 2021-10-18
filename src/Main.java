@@ -7,8 +7,8 @@ import com.jdabtieu.input.Input;
  * they traverse a vast dungeon with three floors (stages). Solve puzzles, defeat enemies
  * and bosses, gather coins and custom weapons, and find the way out!
  * 
- * @author Jonathan Wu (jonathan.wu3@outlook.com)
- * @version v1.0.2 (2021-10-17)
+ * @author Jonathan Wu (jonathan.wu3@student.tdsb.on.ca)
+ * @date 2021-10-21
  */
 public class Main {
     /**
