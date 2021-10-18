@@ -7,9 +7,3 @@
 bin
 DungeonGame.jar
 build
-
-# Testing Results
-tests/DungeonGame
-tests/jacoco-resources
-tests/index.html
-tests/jacoco-sessions.html
