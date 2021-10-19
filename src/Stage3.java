@@ -158,8 +158,10 @@ public class Stage3 {
         
         // prompt for moves
         System.out.print(">>> ");
-        moves = Main.in.readLine(e -> e.matches("[uldrULDR]+"),
-                                 "That's an invalid path").toUpperCase();
+        moves = Main.in.readLine(e -> e.matches("[uldrULDR]{3,}"),
+                                 "That's an invalid path! Make sure you only use the letters "
+                               + "U, L, D, and R, and that you enter all your moves on "
+                               + "one line.").toUpperCase();
         
         // simulate user moves
         for (int i = 0; i < moves.length(); i++) {
@@ -283,7 +285,7 @@ public class Stage3 {
                 level5Trivia("Finish the word using previous clues:\n"
                            + "_ E _ _ _ R", "vector");
                 Util.safeSleep(1000);
-                System.out.println("Quiz Show over!");
+                System.out.println("Thanks for playing!");
                 Util.safeSleep(1000);
                 System.out.println("Press Enter to continue");
                 Main.in.readLine();
