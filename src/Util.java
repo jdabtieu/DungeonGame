@@ -96,7 +96,7 @@ public class Util {
     public static boolean prompt(final String pmt) {
         System.out.println(pmt + " [y/n]");
         // ensure input is 1 letter and a capital/lowercase 'y' or 'n'
-        return Main.in.readLine(e -> e.length() == 1 && "yYnN".indexOf(e) != -1)
+        return Main.in.readLine(e -> e.length() == 1 && "yYnN".indexOf(e) != -1, pmt + " [y/n]")
                       .equalsIgnoreCase("y");
     }
     

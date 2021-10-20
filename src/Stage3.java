@@ -306,7 +306,7 @@ public class Stage3 {
     private static void level5Trivia(String ques, String ans) {
         System.out.println(ques);
         System.out.print(">>> ");
-        if (Main.in.readLine().equalsIgnoreCase(ans)) {
+        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase(ans)) {
             System.out.println("That is correct!!!!!!");
             Util.safeSleep(1000);
             System.out.println("You won: 1200 coins");

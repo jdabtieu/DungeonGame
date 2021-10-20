@@ -98,7 +98,7 @@ public class Stage1 {
         // gotten the prize
         while (!coins3Found && Util.prompt("Do you want to try the combination lock?")) {
             System.out.println("Guess: ");
-            if (Main.in.readLine().equals("142342")) {
+            if (Main.in.readLine(e -> e.length() > 0).equals("142342")) {
                 System.out.println("You found 400 coins!");
                 Main.p.coins += 400;
                 coins3Found = true;
