@@ -96,7 +96,7 @@ public class Stage2 {
                 + "a) public static final double y;\n"
                 + "b) private static final ArrayList<Object> y;\n"
                 + "c) public package int y;");
-        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("c")) {
+        if (Main.in.readLine(e -> e.length() == 1 && "abcABC".contains(e)).equalsIgnoreCase("c")) {
             score++;
             System.out.println("Correct!");
         } else {
@@ -107,10 +107,9 @@ public class Stage2 {
         System.out.println("Question 2: Which of the following would give an "
                          + "experienced programmer an aneurism?\n"
                 + "a) if (!someBool == true)\n"
-                + "b) if (!someBool)\n"
-                + "c) if (someBool)\n"
-                + "d) if (someBool && someNumber > 3)");
-        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("a")) {
+                + "b) if (someBool)\n"
+                + "c) if (someBool && someNumber > 3)");
+        if (Main.in.readLine(e -> e.length() == 1 && "abcABC".contains(e)).equalsIgnoreCase("a")) {
             score++;
             System.out.println("Correct!");
         } else {
@@ -122,7 +121,7 @@ public class Stage2 {
                 + "a) In the program itself\n"
                 + "b) In an environment variable\n"
                 + "c) In a text file with permissions 777");
-        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("b")) {
+        if (Main.in.readLine(e -> e.length() == 1 && "abcABC".contains(e)).equalsIgnoreCase("b")) {
             score++;
             System.out.println("Correct!");
         } else {
@@ -134,7 +133,7 @@ public class Stage2 {
                 + "a) 600\n"
                 + "b) 644\n"
                 + "c) 777");
-        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("a")) {
+        if (Main.in.readLine(e -> e.length() == 1 && "abcABC".contains(e)).equalsIgnoreCase("a")) {
             score++;
             System.out.println("Correct!");
         } else {
@@ -146,13 +145,15 @@ public class Stage2 {
                 + "a) we get some file!\n"
                 + "b) grabs a file from another drive\n"
                 + "c) downloads a file off the internet");
-        if (Main.in.readLine(e -> e.length() > 0).equalsIgnoreCase("c")) {
+        if (Main.in.readLine(e -> e.length() == 1 && "abcABC".contains(e)).equalsIgnoreCase("c")) {
             score++;
             System.out.println("Correct!");
         } else {
             System.out.println("Wrong!");
         }
         
+        System.out.println("Press Enter to continue");
+        Main.in.readLine();
         Util.cls();
         // check if user has passed
         if (score >= 4) {
@@ -265,7 +266,7 @@ public class Stage2 {
             System.out.println(new Weapon("One Hit Blade", 2000, 1));
             if (Util.prompt("Would you like to purchase it?")) {
                 if (Main.p.coins < 3300) {
-                    System.out.println("Not enough coins!");
+                    System.out.println("Not enough coins! :P");
                 } else {
                     Main.p.coins -= 3300;
                     Main.p.addWeapon(new Weapon("One Hit Blade", 2000, 1));

@@ -19,7 +19,7 @@ rm -rf build
 mkdir build
 
 echo "Compiling..."
-javac -sourcepath src -d build src/*.java
+javac -source 1.8 -target 1.8 -sourcepath src -d build src/*.java
 
 echo "Building..."
 jar cmvf META-INF/MANIFEST.MF DungeonGame.jar -C build . assets
